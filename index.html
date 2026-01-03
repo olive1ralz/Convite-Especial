@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite Especial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #f5efe6, #e8dcc8);
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #4a3b2c;
+    }
+
+    .convite {
+      background: #fffaf3;
+      max-width: 420px;
+      width: 90%;
+      padding: 40px 30px;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .ornamento {
+      font-size: 28px;
+      color: #b08d57;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #6b4f2c;
+    }
+
+    .subtitulo {
+      font-size: 15px;
+      margin-bottom: 30px;
+      color: #7a6a55;
+    }
+
+    .texto {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .pais {
+      font-size: 13px;
+      margin-bottom: 25px;
+      color: #6d5b44;
+    }
+
+    .nomes {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      margin: 20px 0;
+      color: #4f3a1f;
+    }
+
+    .data {
+      margin: 25px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .data strong {
+      display: block;
+      font-size: 16px;
+      margin-top: 8px;
+    }
+
+    .local {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .botao {
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .confirmar {
+      background: linear-gradient(135deg, #b08d57, #d1b07a);
+      color: white;
+    }
+
+    .confirmar:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(176,141,87,0.4);
+    }
+
+    .localizacao {
+      border: 2px solid #b08d57;
+      color: #6b4f2c;
+      background: transparent;
+    }
+
+    .localizacao:hover {
+      background: #b08d57;
+      color: white;
+    }
+
+    .site {
+      background: #6b4f2c;
+      color: white;
+    }
+
+    .site:hover {
+      background: #4f3a1f;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #8a7a64;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="convite">
+    <div class="ornamento">✦</div>
+
+    <h1>Convite Especial</h1>
+    <p class="subtitulo">Venha celebrar nosso amor e fazer parte da nossa história</p>
+
+    <p class="texto">
+      Com a bênção de seus pais
+    </p>
+
+    <div class="pais">
+      <strong>Edson</strong> & <strong>Marlene</strong><br>
+      <strong>Carlos</strong> & <strong>Luciana</strong>
+    </div>
+
+    <p class="texto">Convidam para o casamento de</p>
+
+    <div class="nomes">
+      Israel <br> & <br> Anny
+    </div>
+
+    <div class="data">
+      que irá se realizar no
+      <strong>Associação dos Funcionários Municipais de Maringá - AFMM</strong>
+      <strong>07 de Junho • 17:00</strong>
+    </div>
+
+    <div class="botoes">
+      <!-- CONFIRMAÇÃO -->
+      <a href="https://www.confirmaja.com.br//confirmar.php?token=19f768d54c209c32" target="_blank" class="botao confirmar">
+        Confirmar Presença
+      </a>
+
+      <!-- LOCALIZAÇÃO -->
+      <a href="https://maps.app.goo.gl/v4wgJBfH4KMErNhW7" target="_blank" class="botao localizacao">
+        Ver Localização
+      </a>
+
+      <!-- SITE OU LISTA -->
+      <a href="https://lista.havan.com.br/Convidado/ItensListaPresente/893402" target="_blank" class="botao site">
+        Lista de Presentes
+      </a>
+    </div>
+
+    <footer>
+      Esperamos você para esse momento inesquecível
+    </footer>
+  </div>
+
+</body>
+</html>
